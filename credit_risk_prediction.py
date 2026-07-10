@@ -70,7 +70,7 @@ except Exception as e:
     print(f"⚠ Could not load from URL: {e}")
     print("Trying local file: data/german_credit_data.csv")
     try:
-        df = pd.read_csv('data/german_credit_data.csv')
+        df = pd.read_csv('german_credit_data.csv')
         print("✓ Dataset loaded from local file!")
     except:
         print("❌ Error: Could not load dataset from URL or local file.")
